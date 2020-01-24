@@ -4,6 +4,7 @@ def run_guessing_game
   puts "Enter a number between 1 and 6"
   temp = gets.chomp.to_s()
   random_num = (1 + rand(6))
+  
   case temp 
   when 'exit'
       puts "Goodbye!"
@@ -12,4 +13,5 @@ def run_guessing_game
   else
     puts "Sorry! The computer guessed #{random_num}."
   end
+  
 end
